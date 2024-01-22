@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+.Week1 {
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+    text-align: left;
+}
+
+.journal-entry {
+    max-width: 600px;
+}
+
+.journal-entry p {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.journal-entry p:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.journal-entry p:nth-of-type(2) {
+    margin-left: 100px;
+    margin-right: -100px;
+}
+
+.journal-entry p:nth-of-type(3) {
+    margin-left: 200px;
+    margin-right: -200px;
+}
+
+.journal-entry p:nth-of-type(4) {
+    margin-left: 300px;
+    margin-right: -300px;
+}
+
+.Situation {
+    color: red; 
+  }
+  .Task {
+    color: yellow; 
+  }
+  .Action {
+    color: yellowgreen; 
+  }
+  .Result {
+    color: green; 
+  }
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
