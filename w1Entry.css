@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,11 +16,20 @@ body {
     align-items: left;
     justify-content: left;
     padding: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 .journal-entry {
     max-width: 600px;
+    position: relative;
+    margin-right: 320px; /* Added margin for the image */
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: -500px; /* Adjusted right positioning to overlap less */
+    max-width: 300px; /* Adjusted max-width as needed */
 }
 
 .journal-entry p {
@@ -29,43 +38,40 @@ body {
     margin-right: 20px;
 }
 
-.journal-entry p:nth-of-type(1) {
-    margin-left: 0;
-}
-
 .journal-entry p:nth-of-type(2) {
-    margin-left: 100px;
-    margin-right: -100px;
+    margin-left: 120px;
+    margin-right: -120px;
 }
 
 .journal-entry p:nth-of-type(3) {
-    margin-left: 200px;
-    margin-right: -200px;
+    margin-left: 240px;
+    margin-right: -240px;
 }
 
 .journal-entry p:nth-of-type(4) {
-    margin-left: 300px;
-    margin-right: -300px;
+    margin-left: 360px;
+    margin-right: -360px;
 }
 
 .Situation {
     color: red; 
-  }
-  .Task {
-    color: yellow; 
-  }
-  .Action {
-    color: yellowgreen; 
-  }
-  .Result {
-    color: green; 
-  }
+}
 
+.Task {
+    color: yellow; 
+}
+
+.Action {
+    color: yellowgreen; 
+}
+
+.Result {
+    color: green; 
+}
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
-
